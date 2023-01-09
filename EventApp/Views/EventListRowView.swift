@@ -14,7 +14,7 @@ struct EventListRowView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10){
             Spacer()
-            Text("\(event.fields.Activity)").font(Font.system(size: 18, weight: .bold, design: Font.Design.serif)).foregroundColor(Color.black)
+            Text("\(event.fields.Activity)").font(Font.system(size: 22, weight: .bold, design: Font.Design.serif)).foregroundColor(Color.primary)
             
             Text("Type: ").font(Font.system(size: 16, weight: .bold , design: Font.Design.serif))
             + Text("\(event.fields.type)").font(Font.system(size: 16, weight: .medium , design: Font.Design.serif)).foregroundColor(Color.gray)

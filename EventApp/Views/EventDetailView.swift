@@ -15,7 +15,7 @@ struct EventDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10){
                 Spacer()
-                Text("\(event.fields.Activity)").font(Font.system(size: 18, weight: .bold, design: Font.Design.serif)).foregroundColor(Color.black)
+                Text("\(event.fields.Activity)").font(Font.system(size: 22, weight: .bold, design: Font.Design.serif)).foregroundColor(Color.primary)
                 
                 Text("Type: ").font(Font.system(size: 16, weight: .bold , design: Font.Design.serif))
                 + Text("\(event.fields.type)").font(Font.system(size: 16, weight: .medium , design: Font.Design.serif)).foregroundColor(Color.gray)
@@ -58,12 +58,12 @@ struct EventDetailView: View {
                 if let notes = event.fields.Notes {
                     HStack{
                         VStack(alignment: .leading){
-                            Text("Notes: ").font(Font.system(size: 16, weight: .bold , design: Font.Design.serif))
+                            Text("Notes: ").font(Font.system(size: 20, weight: .bold , design: Font.Design.serif))
                             Spacer()
                         }
                         
                         VStack(alignment: .leading){
-                            Text("\(notes)").font(Font.system(size: 16, weight: .regular , design: Font.Design.serif)).foregroundColor(Color.gray).frame(minHeight: 25)
+                            Text("\(notes)").font(Font.system(size: 20, weight: .regular , design: Font.Design.serif)).foregroundColor(Color.gray).frame(minHeight: 25)
                             Spacer()
                         }
                     }
